@@ -1,0 +1,35 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "stick": {
+      "textures": [
+        "textures/items/stick"
+      ]
+    },
+      "trophy": {
+      "textures": [
+        "textures/trophy/acloss",
+        "textures/trophy/vannace",
+        "textures/trophy/saidle_dragon",
+        "textures/trophy/striwarrior"
+      ]
+    },
+      "r_egg": {
+      "textures": [
+        "textures/egg/phantom",
+        "textures/egg/saidle_dragon"
+      ]
+    },
+      "magic_book_base": {
+      "textures": [
+        "textures/items/magic_book_base"
+      ]
+    },
+      "projector": {
+      "textures": [
+        "textures/items/projector"
+      ]
+    }
+  }
+}

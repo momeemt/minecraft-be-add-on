@@ -1,0 +1,8 @@
+{
+  "materials": {
+    "version": "1.0.0",
+
+    "duck_legs:entity_alphatest": {},
+    "skeletaur:entity_alphatest": {}
+  }
+}

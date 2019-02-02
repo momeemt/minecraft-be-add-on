@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script src="UIEngine.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="hGUI">
+        <div class="GUI large">
+          <div id="top-container">
+            <div id="otherUI">Structure Block</div>
+            <button id="_close_">x</button>
+          </div>
+          <div class="h2GUI">
+            <button class="Btn" id="_set_">Set</button>
+          </div>
+          <div class="h2GUI">
+            <button class="Btn" id="_replace_">Replace Set</button>
+          </div>
+          <div class="h2GUI">
+            <button class="Btn" id="_outline_">OutLine</button>
+          </div>
+          <div class="h2GUI">
+            <button class="Btn" id="_copyBack_">Back to Main Menu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    let scriptEngineHandle = null;
+    engine.on("scriptEngine:created", function (scriptEngine) {
+        scriptEngineHandle = scriptEngine;
+      });
+
+    let closeButton = document.getElementById("_close_");
+    closeButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("closeUI");
+    });
+
+    let scanButton = document.getElementById("_set_");
+    scanButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("Setting");
+    });
+
+    let blockButton = document.getElementById("_replace_");
+    blockButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("Replacing");
+    });
+
+    let entityButton = document.getElementById("_outline_");
+    entityButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("Outlining");
+    });
+
+    let quitButton = document.getElementById("_copyBack_");
+    quitButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("CopyBacking");
+    });
+  </script>
+</html>

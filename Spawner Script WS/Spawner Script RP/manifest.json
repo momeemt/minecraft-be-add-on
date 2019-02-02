@@ -1,10 +1,10 @@
 {
     "format_version": 1,
     "header": {
-        "description": "With this script, you can use the structure block.",
-        "name": "WorldEdit script",
-        "uuid": "86ed079e-9bec-645e-e754-3e69fdddedba",
-        "version": [0,2,0],
+        "description": "With this script, you can use the message-app.",
+        "name": "Message script",
+        "uuid": "86ed079e-9bec-645e-e754-3e11fdddedba",
+        "version": [1,0,0],
         "min_engine_version": [1, 0, 0]
     },
     "modules": [
@@ -12,13 +12,13 @@
             "description": "",
             "type": "resources",
             "uuid": "c0c14bdf-4f23-4956-bd81-dc903d0c61ae",
-            "version": [0,2,0]
+            "version": [1,0,0]
         }
     ],
     "dependencies": [
         {
-            "uuid": "23c6e196-018b-409a-ae26-6abc86acf05b",
-            "version": [0,2,0]
+            "uuid": "23c6e196-018b-409a-ae26-6abc11acf05b",
+            "version": [1,0,0]
         }
     ],
     "capabilities": [

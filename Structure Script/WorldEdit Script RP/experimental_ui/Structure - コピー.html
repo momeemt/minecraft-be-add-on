@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script src="UIEngine.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="hGUI">
+        <div class="GUI large">
+          <div id="top-container">
+            <div>Structure Block</div>
+            <button id="_close_">x</button>
+          </div>
+          <div class="h2GUI">
+            <button class="Btn" id="_scan_">Scan</button>
+          </div>
+          <div class="h2GUI">
+            <button class="Btn" id="_block_">BlockCopy</button>
+          </div>
+          <div class="h2GUI">
+            <button class="Btn" id="_entity_">Block & EntityCopy</button>
+          </div>
+          <div class="h2GUI">
+            <button class="Btn" id="_quit_">Quit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    let scriptEngineHandle = null;
+    engine.on("scriptEngine:created", function (scriptEngine) {
+        scriptEngineHandle = scriptEngine;
+      });
+
+    let closeButton = document.getElementById("_close_");
+    closeButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("closeUI");
+    });
+
+    let scanButton = document.getElementById("_scan_");
+    scanButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("Scaning");
+    });
+
+    let blockButton = document.getElementById("_block_");
+    blockButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("BCopying");
+    });
+
+    let entityButton = document.getElementById("_entity_");
+    entityButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("ECopying");
+    });
+
+    let quitButton = document.getElementById("_quit_");
+    quitButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("Quiting");
+    });
+  </script>
+</html>

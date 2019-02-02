@@ -1,0 +1,504 @@
+{
+    "minecraft:entity": {
+        "format_version": "1.8.0",
+    "description": {
+      "identifier": "momiyama:meta_command_block",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+        "component_groups": {
+      "corner_mode": {
+            "minecraft:interact": [
+       {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "stick"
+                }
+              ]
+            },
+            "event": "default_mode",
+            "target": "self"
+          },
+          "use_item": false,
+          "swing": true,
+          "play_sounds": "attach",
+          "interact_text": "Change"
+        },
+                {
+                    "on_interact": {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "head",
+                                    "subject": "other",
+                                    "value": "skull:4"
+                                },
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "hand",
+                                    "subject": "other",
+                                    "value": "iron_sword"
+                                }
+                            ]
+                        },
+                        "event": "kill_myself",
+                        "target": "self"
+                    },
+                    "use_item": false,
+                    "interact_text": "kill"
+                }
+            ],
+        "minecraft:variant": {
+          "value": 5
+        }
+      },
+      "data_mode": {
+            "minecraft:interact": [
+       {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "stick"
+                }
+              ]
+            },
+            "event": "corner_mode",
+            "target": "self"
+          },
+          "use_item": false,
+          "swing": true,
+          "play_sounds": "attach",
+          "interact_text": "Change"
+        },
+                {
+                    "on_interact": {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "head",
+                                    "subject": "other",
+                                    "value": "skull:4"
+                                },
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "hand",
+                                    "subject": "other",
+                                    "value": "iron_sword"
+                                }
+                            ]
+                        },
+                        "event": "kill_myself",
+                        "target": "self"
+                    },
+                    "use_item": false,
+                    "interact_text": "kill"
+                }
+            ],
+        "minecraft:variant": {
+          "value": 4
+        }
+      },
+      "export_mode": {
+            "minecraft:interact": [
+       {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "stick"
+                }
+              ]
+            },
+            "event": "data_mode",
+            "target": "self"
+          },
+          "use_item": false,
+          "swing": true,
+          "play_sounds": "attach",
+          "interact_text": "Change"
+        },
+                {
+                    "on_interact": {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "head",
+                                    "subject": "other",
+                                    "value": "skull:4"
+                                },
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "hand",
+                                    "subject": "other",
+                                    "value": "iron_sword"
+                                }
+                            ]
+                        },
+                        "event": "kill_myself",
+                        "target": "self"
+                    },
+                    "use_item": false,
+                    "interact_text": "kill"
+                }
+            ],
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
+      "load_mode": {
+            "minecraft:interact": [
+       {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "stick"
+                }
+              ]
+            },
+            "event": "export_mode",
+            "target": "self"
+          },
+          "use_item": false,
+          "swing": true,
+          "play_sounds": "attach",
+          "interact_text": "Change"
+        },
+                {
+                    "on_interact": {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "head",
+                                    "subject": "other",
+                                    "value": "skull:4"
+                                },
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "hand",
+                                    "subject": "other",
+                                    "value": "iron_sword"
+                                }
+                            ]
+                        },
+                        "event": "kill_myself",
+                        "target": "self"
+                    },
+                    "use_item": false,
+                    "interact_text": "kill"
+                }
+            ],
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "save_mode": {
+            "minecraft:interact": [
+       {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "stick"
+                }
+              ]
+            },
+            "event": "load_mode",
+            "target": "self"
+          },
+          "use_item": false,
+          "swing": true,
+          "play_sounds": "attach",
+          "interact_text": "Change"
+        },
+                {
+                    "on_interact": {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "head",
+                                    "subject": "other",
+                                    "value": "skull:4"
+                                },
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "hand",
+                                    "subject": "other",
+                                    "value": "iron_sword"
+                                }
+                            ]
+                        },
+                        "event": "kill_myself",
+                        "target": "self"
+                    },
+                    "use_item": false,
+                    "interact_text": "kill"
+                }
+            ],
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "default_mode": {
+            "minecraft:interact": [
+       {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "stick"
+                }
+              ]
+            },
+            "event": "save_mode",
+            "target": "self"
+          },
+          "use_item": false,
+          "swing": true,
+          "play_sounds": "attach",
+          "interact_text": "Change"
+        },
+                {
+                    "on_interact": {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "head",
+                                    "subject": "other",
+                                    "value": "skull:4"
+                                },
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "hand",
+                                    "subject": "other",
+                                    "value": "iron_sword"
+                                }
+                            ]
+                        },
+                        "event": "kill_myself",
+                        "target": "self"
+                    },
+                    "use_item": false,
+                    "interact_text": "kill"
+                }
+            ],
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+            "dead": {
+                "minecraft:health": {
+                    "value": 0,
+                    "max": 0
+                }
+            }
+        },
+        "components": {
+      "minecraft:fire_immune": true,
+            "minecraft:is_stackable": {},
+            "minecraft:breathable": {
+                "totalSupply": 15,
+                "suffocateTime": 0
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/empty.json"
+            },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 1
+            },
+            "minecraft:health": {
+                "value": 999,
+                "max": 999
+            },
+            "minecraft:damage_sensor": [
+                {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            ],
+            "minecraft:interact": [
+       {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "stick"
+                }
+              ]
+            },
+            "event": "save_mode",
+            "target": "self"
+          },
+          "use_item": false,
+          "swing": true,
+          "play_sounds": "attach",
+          "interact_text": "Change"
+        },
+                {
+                    "on_interact": {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "head",
+                                    "subject": "other",
+                                    "value": "skull:4"
+                                },
+                                {
+                                    "test": "has_equipment",
+                                    "domain": "hand",
+                                    "subject": "other",
+                                    "value": "iron_sword"
+                                }
+                            ]
+                        },
+                        "event": "kill_myself",
+                        "target": "self"
+                    },
+                    "use_item": false,
+                    "interact_text": "kill"
+                }
+            ],
+            "minecraft:physics": {}
+        },
+        "events": {
+            "default_mode": {
+                "remove": {
+                    "component_groups": []
+                },
+                "add": {
+                    "component_groups": [
+                        "default_mode"
+                    ]
+                }
+            },
+            "corner_mode": {
+                "remove": {
+                    "component_groups": []
+                },
+                "add": {
+                    "component_groups": [
+                        "corner_mode"
+                    ]
+                }
+            },
+            "data_mode": {
+                "remove": {
+                    "component_groups": []
+                },
+                "add": {
+                    "component_groups": [
+                        "data_mode"
+                    ]
+                }
+            },
+            "export_mode": {
+                "remove": {
+                    "component_groups": []
+                },
+                "add": {
+                    "component_groups": [
+                        "export_mode"
+                    ]
+                }
+            },
+            "load_mode": {
+                "remove": {
+                    "component_groups": []
+                },
+                "add": {
+                    "component_groups": [
+                        "load_mode"
+                    ]
+                }
+            },
+            "save_mode": {
+                "remove": {
+                    "component_groups": []
+                },
+                "add": {
+                    "component_groups": [
+                        "save_mode"
+                    ]
+                }
+            },
+            "kill_myself": {
+                "remove": {
+                    "component_groups": []
+                },
+                "add": {
+                    "component_groups": [
+                        "dead"
+                    ]
+                }
+            }
+        }
+    }
+}

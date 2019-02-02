@@ -1,0 +1,84 @@
+@font-face{
+  font-family: "Minecraftia";
+  src: url(fonts/Minecraftia.ttf);
+}
+
+body{
+  font-family: "Minecraftia";
+}
+
+#container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.GUI{
+  background-color: #c6c6c6;
+  border-top: white 3px solid;
+  border-left: white 5px solid;
+  border-bottom: #555555 2px solid;
+  border-right: #555555 2px solid;
+  border-radius: 5px;
+}
+
+.large{
+  height: 350px;
+  width: 700px;
+}
+
+.hGUI{
+  border: 1.5px black solid;
+  border-radius: 5px;
+}
+
+#top-container{
+  display:flex;
+  justify-content: flex-end;
+	align-items: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#menuDiv{
+  margin-right: 140px;
+}
+
+#otherUI{
+  margin-right: 170px;
+}
+
+#_close_{
+  margin-right: 40px;
+}
+
+button:hover{
+  background-color: #afafaf;
+}
+
+.h2GUI{
+  border: 2px black solid;
+  border-radius: 5px;
+  margin: 15px 0 0 25px;
+  height: 50px;
+  width:650px;
+}
+
+.Btn{
+  border-top: white 3px solid;
+  border-left: white 5px solid;
+  border-bottom: #555555 2px solid;
+  border-right: #555555 2px solid;
+  border-radius: 5px;
+  height: 50px;
+  margin: 0 0 0 1px;
+  width:650px;
+  font-family: "Minecraftia";
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.meta_command_block": {
+      "arrays": {
+        "textures": {
+          "Array.variants": [
+            "Texture.default",
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [
+       "Array.variants[query.variant]"
+      ]
+    }
+  }
+}

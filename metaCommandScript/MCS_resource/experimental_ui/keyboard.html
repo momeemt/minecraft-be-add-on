@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script src="UIEngine.js"></script>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="hGUI">
+        <div class="GUI large">
+          <div id="first">
+            <button>chenge</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+            <button>- =</button>
+            <button>^ ~</button>
+            <button>\ |</button>
+            <button>BackSpace</button>
+          </div>
+          <div id="second">
+            <button>Tab</button>
+            <button>Q</button>
+            <button>W</button>
+            <button>E</button>
+            <button>R</button>
+            <button>T</button>
+            <button>Y</button>
+            <button>U</button>
+            <button>I</button>
+            <button>O</button>
+            <button>P</button>
+            <button>@ `</button>
+            <button>[ { 「</button>
+            <button>Enter</button>
+          </div>
+          <div id="third">
+            <button>CapsLock</button>
+            <button>A</button>
+            <button>S</button>
+            <button>D</button>
+            <button>F</button>
+            <button>G</button>
+            <button>H</button>
+            <button>J</button>
+            <button>K</button>
+            <button>L</button>
+            <button>+ ;</button>
+            <button>* :</button>
+            <button>] } 」</button>
+          </div>
+          <div id="fouth">
+            <button>Shift</button>
+            <button>Z</button>
+            <button>X</button>
+            <button>C</button>
+            <button>V</button>
+            <button>Space</button>
+            <button>B</button>
+            <button>N</button>
+            <button>M</button>
+            <button>, <</button>
+            <button>. ></button>
+            <button>/ ?</button>
+            <button>_</button>
+            <button>Shift</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    document.onkeydown = keydown;
+
+    function keydown() {
+      target = document.getElementById("menuDiv");
+      target.innerHTML = "キーが押されました KeyCode :" + event.keyCode;
+    }
+
+    let scriptEngineHandle = null;
+    engine.on("scriptEngine:created", function (scriptEngine) {
+        scriptEngineHandle = scriptEngine;
+      });
+
+    let closeButton = document.getElementById("_close_");
+    closeButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("closeUI");
+    });
+
+    let scanButton = document.getElementById("_fill_");
+    scanButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("FillUI");
+    });
+
+    let blockButton = document.getElementById("_copy_");
+    blockButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("CopyUI");
+    });
+
+    let entityButton = document.getElementById("_move_");
+    entityButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("MoveUI");
+    });
+
+    let quitButton = document.getElementById("_quit_");
+    quitButton.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("Quiting");
+    });
+  </script>
+</html>
